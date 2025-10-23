@@ -23,9 +23,6 @@ public:
 
     size_t getSize() const;
 
-    void setSize(size_t size);
-    void setNumberStr(unsigned char* number_str);
-
     Three add(const Three& other) const;
     Three subtract(const Three& other) const;
     Three copy() const;
@@ -36,6 +33,9 @@ public:
 
     void print() const;
     std::string toString() const;
+private:
+    void setSize(size_t size);
+    void setNumberStr(unsigned char* number_str);
 };
 
 #endif

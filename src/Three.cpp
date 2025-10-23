@@ -235,10 +235,10 @@ std::string Three::toString() const
         return "";
     }
 
-    std::string res_str;
+    std::string res_str(_size, '0');
     for (size_t i = 0; i < _size; ++i)
     {
-        res_str += _number_str[_size - i - 1];
+        res_str[i] = _number_str[_size - i - 1];
     }
 
     return res_str;
