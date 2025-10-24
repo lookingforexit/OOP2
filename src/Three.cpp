@@ -97,6 +97,9 @@ Three::~Three() noexcept
     {
         delete[] _number_str;
     }
+
+    _number_str = nullptr;
+    _size = 0;
 }
 
 Three Three::add(const Three& other) const
